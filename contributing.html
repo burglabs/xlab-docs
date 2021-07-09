@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <link rel="canonical" href="https://burglabs.github.io//contributing" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="  TLDR (too long, didn’t read)      We are open to contributions!    The prefered method is by submitting a pull request, this ensures information is checked...">
+
+  <meta property="og:site_name" content="XLab Knowledge Base">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="/knowledge-xlab/styles.css">
+  
+  
+  <meta property="og:description" content="  TLDR (too long, didn’t read)      We are open to contributions!    The prefered method is by submitting a pull request, this ensures information is checked..."/>
+  
+
+  
+  <meta property="og:title" content="Contributing">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2021-07-09T14:34:54+00:00">
+  <meta property="article:author" content="https://burglabs.github.io//">
+  
+
+  <meta property="og:url" content="https://burglabs.github.io//contributing" />
+
+  
+
+  <title>
+    
+      Contributing &mdash; XLab Knowledge Base
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/knowledge-xlab/"><b>XLab Knowledge Base</b></a>
+    <a class="internal-link" href="/knowledge-xlab/xlab-index">Index</a>
+    <a class="internal-link" href="/knowledge-xlab/graph">Graph</a>
+    <a class="internal-link" href="/knowledge-xlab/contributing">Contributing</a>
+    <a class="internal-link" href="https://github.com/burglabs/xlab-docs">Source</a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main>
+
+<article>
+
+  <div id="notes-entry-container">
+    <content>
+      <h1>Contributing</h1>
+      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<blockquote>
+  <p><strong>TLDR</strong> (too long, didn’t read)</p>
+  <ul>
+    <li>We are open to contributions!</li>
+    <li>The prefered method is by submitting a pull request, this ensures information is checked and confirmed by multiple sources. Frequent contributors will be allowed to push minor changes directly.</li>
+    <li>Preview locally using a web server of your choice.</li>
+  </ul>
+</blockquote>
+
+<h2 id="how-to-contribute">How to contribute</h2>
+<p>We are very happy for people to share their knowledge as well as document their projects on this knowledge base. Since the area of interest of the XLab is fairly wide, so will be this collection.
+To coordinate all of this, we are using a so-called <a class="internal-link" href="/knowledge-xlab/git-and-github">Git</a> repository. Git is a free and open source version control system, which makes it very easy for many people to collaborate on source code and other text files, in our case mainly the markdown files behind this. To help us grow and maintain this knowledge base, you don’t need to become an expert in git, just use the following guide to get started.</p>
+
+<h2 id="recommended-setup">Recommended setup</h2>
+<blockquote>
+  <p>Even though there are countless options to edit markdown files and synchronize them with git, this is our recommended setup for beginners and advanced users alike. If you have experience with alternative tools, feel free to use those.</p>
+</blockquote>
+
+<ol>
+  <li>Install <a href="https://obsidian.md/" target="blank">Obsidian</a> - this will be your main editor.</li>
+  <li>Install <a href="https://desktop.github.com/" target="blank">GitHub Desktop</a> - this will give you an interface to sync the repository with your local computer.</li>
+</ol>
+
+<h2 id="cloning-the-repository">Cloning the repository</h2>
+<p><a class="internal-link" href="/knowledge-xlab/git-and-github">Git</a> allows you to <em>clone</em> any git repository to your local computer. As the name says, this creates a clone of all the folders and files at this particular time.</p>
+<ol>
+  <li>Open GitHub Desktop.</li>
+  <li>Go to <code class="language-plaintext highlighter-rouge">file -&gt; clone repository</code> and type in <code class="language-plaintext highlighter-rouge">burglabs/knowledge-xlab</code>.</li>
+  <li>Choose a local path where you want to save the repository.</li>
+  <li>Click <code class="language-plaintext highlighter-rouge">clone</code>.</li>
+  <li>Done - you are ready to start using your local clone now! ✨</li>
+</ol>
+
+<h2 id="using-obsidian">Using Obsidian</h2>
+<p>Obsidian has a very useful <code class="language-plaintext highlighter-rouge">command palette</code>, which you can open by pressing <code class="language-plaintext highlighter-rouge">cmd/control + p</code> or clicking the symbol in the left toolbar. You can use this to find pretty much any command or menu item.</p>
+<ol>
+  <li>The currently open notes-collection is called a vault in Obsidian. When you first open Obsidian, it might give you the option to <code class="language-plaintext highlighter-rouge">open folder as vault</code>. If not or you have already used it, type <code class="language-plaintext highlighter-rouge">open another vault</code> into the command palette to open the dialog again.</li>
+  <li>Navigate to the local repository clone, choose the <code class="language-plaintext highlighter-rouge">_notes</code> folder and confirm.</li>
+  <li>Congratulations, you now have the local clone of the knowledge base openend in Obsidian**. Have fun exploring!</li>
+</ol>
+
+<h2 id="synchronising-with-github">Synchronising with GitHub</h2>
+<p>Synchronizing your or other people’s changes (<em>commits</em>) is called <em>pushing</em> and <em>pulling</em> in git.</p>
+
+<h3 id="commits">commits</h3>
+<p>A commit is an arbitrary amount of changes to files and folders, saved as a version in the repository. Ideally you should create a commit, whenever it makes sense to save something as another version.</p>
+
+<h3 id="pulling">pulling</h3>
+<p>This allows you to update your local repository clone and download all the changes, that have been commited to the main repository since you cloned or last pulled it.
+Ideally, you do this regularly to stay up to date. Especially before you start changing or adding content you should pull the latest remote version.
+In GitHub Desktop you can do this by going to <code class="language-plaintext highlighter-rouge">Repository -&gt; Pull</code>.</p>
+
+<h3 id="pushing">pushing</h3>
+
+<h3 id="pull-requests">pull requests</h3>
+
+</body></html>
+
+      <time datetime="2021-07-09T14:33:24+00:00">
+        Last updated on July 9, 2021
+        
+      </time>
+    </content>
+  
+    <side style="font-size: 0.9em">
+      <div id="notes-side-container">
+        
+        <h3>Table of Content</h3>
+          <div class="sidebar-box">
+            <ol class="toc"><li><a href="#how-to-contribute" class="blank">How to contribute</a></li><li><a href="#recommended-setup" class="blank">Recommended setup</a></li><li><a href="#cloning-the-repository" class="blank">Cloning the repository</a></li><li><a href="#using-obsidian" class="blank">Using Obsidian</a></li><li><a href="#synchronising-with-github" class="blank">Synchronising with GitHub</a><ol><li><a href="#commits" class="blank">commits</a></li><li><a href="#pulling" class="blank">pulling</a></li><li><a href="#pushing" class="blank">pushing</a></li><li><a href="#pull-requests" class="blank">pull requests</a></li></ol></li></ol>
+
+          </div>
+        
+
+        <h3>Notes mentioning this note</h3>
+        
+
+        <div style="font-size: 0.9em">
+          <p>
+            There are no notes linking to this note.
+          </p>
+        </div>
+        
+      </div>
+    </side>
+  </div>
+</article></main>
+      <footer><h3>CONTACT</h3>
+Feel free to get in touch on <a href="https://twitter.com/burg_xlab">Twitter</a> or <a href="https://www.burg-halle.de/hochschule/einrichtungen/burglabs/xlab/">check the website</a> for mail and phone details :)</footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      iframe.src = event.target.href
+      iframe.onload = function() {
+        tooltipContentHtml = ''
+        //tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+        tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+        tooltipContent.innerHTML = tooltipContentHtml
+
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+  </body>
+</html>
